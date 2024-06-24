@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navRowOne {
+  background-color: #e5f5ff;
+  margin: auto;
+  display: flex;
+  height: 50px;
+  position: relative;
+  justify-content: flex-end;
+  padding-right: 160px;
+  font-family: Nunito;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #e5f5ff;
+}
