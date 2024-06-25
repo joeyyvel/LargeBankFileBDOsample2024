@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const AboutBDO = () => {
+  const [show, setShow] = useState(true);
+
   return (
     <>
       <div className="dropdown">
@@ -22,7 +25,10 @@ const AboutBDO = () => {
         </button>
         <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
           <li>
-            <Link className="dropdown dropdown-item py-3">
+            <Link
+              className="dropdown dropdown-item py-3"
+              onClick={() => setShow(!show)}
+            >
               Corporate Profile
               <i
                 className="fa-solid fa-caret-down"
@@ -33,21 +39,25 @@ const AboutBDO = () => {
                 }}
               ></i>
               <div className="dropOne">
-                <li>
-                  <Link>one</Link>
-                </li>
-                <li>
-                  <Link>two</Link>
-                </li>
-                <li>
-                  <Link>three</Link>
-                </li>
-                <li>
-                  <Link>four</Link>
-                </li>
-                <li>
-                  <Link>five</Link>
-                </li>
+                {show ? (
+                  <>
+                    <li>
+                      <Link>one</Link>
+                    </li>
+                    <li>
+                      <Link>two</Link>
+                    </li>
+                    <li>
+                      <Link>three</Link>
+                    </li>
+                    <li>
+                      <Link>four</Link>
+                    </li>
+                    <li>
+                      <Link>five</Link>
+                    </li>
+                  </>
+                ) : null}
               </div>
             </Link>
           </li>
