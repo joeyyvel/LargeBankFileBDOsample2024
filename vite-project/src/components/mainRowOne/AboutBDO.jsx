@@ -21,11 +21,19 @@ const AboutBDO = () => {
           ></i>
         </button>
         <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
-          <li>
-            <Link className="dropdown-item py-3" to="#">
+          <ul className="dropdown-menu rounded-0 p-0 border-0">
+            <li className="dropdown-item py-3" to="#">
               Corporate Profile
-            </Link>
-          </li>
+              <i
+                className="fa-solid fa-caret-down"
+                style={{
+                  paddingLeft: "5rem",
+                  fontSize: "12px",
+                  color: "gray",
+                }}
+              ></i>
+            </li>
+          </ul>
           <li>
             <Link className="dropdown-item py-3" to="#">
               Investor Relations

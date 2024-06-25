@@ -19,6 +19,10 @@
   display: block;
 }
 
+.dropdown:hover {
+  background-color: #99c1e7;
+}
+
 .dropdown-menu > li > a:hover {
   background-color: #e5f5ff;
 }
