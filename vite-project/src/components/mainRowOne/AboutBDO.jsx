@@ -21,19 +21,37 @@ const AboutBDO = () => {
           ></i>
         </button>
         <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
-          <ul className="dropdown-menu rounded-0 p-0 border-0">
-            <li className="dropdown-item py-3" to="#">
+          <li>
+            <Link className="dropdown dropdown-item py-3">
               Corporate Profile
               <i
                 className="fa-solid fa-caret-down"
                 style={{
-                  paddingLeft: "5rem",
+                  paddingLeft: "3rem",
                   fontSize: "12px",
                   color: "gray",
                 }}
               ></i>
-            </li>
-          </ul>
+              <div className="dropOne">
+                <li>
+                  <Link>one</Link>
+                </li>
+                <li>
+                  <Link>two</Link>
+                </li>
+                <li>
+                  <Link>three</Link>
+                </li>
+                <li>
+                  <Link>four</Link>
+                </li>
+                <li>
+                  <Link>five</Link>
+                </li>
+              </div>
+            </Link>
+          </li>
+
           <li>
             <Link className="dropdown-item py-3" to="#">
               Investor Relations
