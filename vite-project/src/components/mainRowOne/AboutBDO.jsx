@@ -46,19 +46,27 @@ const AboutBDO = () => {
                 {show ? (
                   <>
                     <li>
-                      <Link>one</Link>
+                      <Link to="/corporateProfileOverview">
+                        Corporate Profile Overview
+                      </Link>
                     </li>
                     <li>
-                      <Link>two</Link>
+                      <Link to="/corporateDocuments">Corporate Documents</Link>
                     </li>
                     <li>
-                      <Link>three</Link>
+                      <Link to="/awardsAndRecognition">
+                        Awards & Recognitions
+                      </Link>
                     </li>
                     <li>
-                      <Link>four</Link>
+                      <Link to="/shareholderStructure">
+                        Shareholder Structure
+                      </Link>
                     </li>
                     <li>
-                      <Link>five</Link>
+                      <Link to="/organizationalStructure">
+                        Organizational Structure
+                      </Link>
                     </li>
                   </>
                 ) : null}
@@ -84,25 +92,31 @@ const AboutBDO = () => {
                 {show1 ? (
                   <>
                     <li>
-                      <Link>Investor One</Link>
+                      <Link to="/investorRelationsOverview">
+                        Investor Relations Overview
+                      </Link>
                     </li>
                     <li>
-                      <Link>Investor two</Link>
+                      <Link to="/financials">Financials</Link>
                     </li>
                     <li>
-                      <Link>Investor three</Link>
+                      <Link to="/PresentationsAndEvents">
+                        Presentations and Events
+                      </Link>
                     </li>
                     <li>
-                      <Link>Investor four</Link>
+                      <Link to="/capitalAndFunding">Capital and Funding</Link>
                     </li>
                     <li>
-                      <Link>Investor five</Link>
+                      <Link to="/shareInformation">Share Information</Link>
                     </li>
                     <li>
-                      <Link>Investor six</Link>
+                      <Link to="/frequentlyAskedQuestions">
+                        Frequently Asked Questions
+                      </Link>
                     </li>
                     <li>
-                      <Link>Investor seven</Link>
+                      <Link to="/contactInformation">Contact information</Link>
                     </li>
                   </>
                 ) : null}
@@ -127,22 +141,29 @@ const AboutBDO = () => {
                 {show2 ? (
                   <>
                     <li>
-                      <Link>Corporate one</Link>
+                      <Link to="/corporateGovernanceOverview">
+                        Corporate Governance Overview
+                      </Link>
                     </li>
                     <li>
-                      <Link>Corporate two</Link>
+                      <Link to="/governanceStructure">
+                        Governance Structure
+                      </Link>
                     </li>
                     <li>
-                      <Link>Corporate three</Link>
+                      <Link to="/governanceManual">Governance Manual</Link>
                     </li>
                     <li>
-                      <Link>Corporate four</Link>
+                      <Link to="/companyPolicies">Companies Policies</Link>
                     </li>
                     <li>
-                      <Link>Corporate five</Link>
+                      <Link to="/governanceStandard">Governance Standards</Link>
                     </li>
                     <li>
-                      <Link>Corporate six</Link>
+                      <Link to="/enterpriseRisk">Enterprise Risk</Link>
+                    </li>
+                    <li>
+                      <Link to="/sustainability">Sustainability</Link>
                     </li>
                   </>
                 ) : null}
