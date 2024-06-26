@@ -21,6 +21,16 @@ import GovernanceManual from "./components/mainRowOne/aboutChildContent/Governan
 import CompanyPolicies from "./components/mainRowOne/aboutChildContent/CompanyPolicies";
 import GovernanceStandard from "./components/mainRowOne/aboutChildContent/GovernanceStandard";
 import EnterpriseRisk from "./components/mainRowOne/EnterpriseRisk";
+import SustainabilityOverview from "./components/mainRowOne/aboutChildContent/SustainabilityOverview";
+import SustainableFinance from "./components/mainRowOne/aboutChildContent/SustainableFinance";
+import SustainabilityReporting from "./components/mainRowOne/aboutChildContent/SustainabilityReporting";
+import NewsAndFeatures from "./components/mainRowOne/aboutChildContent/NewsAndFeatures";
+import EsgAwards from "./components/mainRowOne/aboutChildContent/EsgAwards";
+import AllDisclosuresOverview from "./components/mainRowOne/aboutChildContent/AllDisclosuresOverview";
+import Ownership from "./components/mainRowOne/aboutChildContent/Ownership";
+import AnnualStockholdersMeeting from "./components/mainRowOne/aboutChildContent/AnnualStockholdersMeeting";
+import SecFilings from "./components/mainRowOne/aboutChildContent/SecFilings";
+import ComplianceAndAMLA from "./components/mainRowOne/aboutChildContent/ComplianceAndAMLA";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -51,4 +61,17 @@ export const router = createBrowserRouter([
   { path: "/companyPolicies", element: <CompanyPolicies /> },
   { path: "/governanceStandard", element: <GovernanceStandard /> },
   { path: "/enterpriseRisk", element: <EnterpriseRisk /> },
+  { path: "/sustainabilityOverview", element: <SustainabilityOverview /> },
+  { path: "/sustainableFinance", element: <SustainableFinance /> },
+  { path: "/sustainabilityReporting", element: <SustainabilityReporting /> },
+  { path: "/newsAndFeatures", element: <NewsAndFeatures /> },
+  { path: "/esgAwards", element: <EsgAwards /> },
+  { path: "/allDisclosuresOverview", element: <AllDisclosuresOverview /> },
+  { path: "/ownership", element: <Ownership /> },
+  {
+    path: "/annualStockholdersMeeting",
+    element: <AnnualStockholdersMeeting />,
+  },
+  { path: "/secFilings", element: <SecFilings /> },
+  { path: "/complianceAndAMLA", element: <ComplianceAndAMLA /> },
 ]);

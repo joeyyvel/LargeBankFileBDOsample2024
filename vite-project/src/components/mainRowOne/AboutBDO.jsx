@@ -162,9 +162,6 @@ const AboutBDO = () => {
                     <li>
                       <Link to="/enterpriseRisk">Enterprise Risk</Link>
                     </li>
-                    <li>
-                      <Link to="/sustainability">Sustainability</Link>
-                    </li>
                   </>
                 ) : null}
               </div>
@@ -188,19 +185,23 @@ const AboutBDO = () => {
                 {show3 ? (
                   <>
                     <li>
-                      <Link>Sustainability 1</Link>
+                      <Link to="/sustainabilityOverview">
+                        Sustainability Overview
+                      </Link>
                     </li>
                     <li>
-                      <Link>Sustainability 2</Link>
+                      <Link to="/sustainableFinance">Sustainable Finance</Link>
                     </li>
                     <li>
-                      <Link>Sustainability 3</Link>
+                      <Link to="/sustainabilityReporting">
+                        Sustainability Reporting
+                      </Link>
                     </li>
                     <li>
-                      <Link>Sustainability 4</Link>
+                      <Link to="/newsAndFeatures">News and Features</Link>
                     </li>
                     <li>
-                      <Link>Sustainability 5</Link>
+                      <Link to="/esgAwards">ESG Awards</Link>
                     </li>
                   </>
                 ) : null}
@@ -225,19 +226,23 @@ const AboutBDO = () => {
                 {show4 ? (
                   <>
                     <li>
-                      <Link>Disclosures 1</Link>
+                      <Link to="/allDisclosuresOverview">
+                        All Disclosures Overview
+                      </Link>
                     </li>
                     <li>
-                      <Link>Disclosures 2</Link>
+                      <Link to="/ownership">Ownership</Link>
                     </li>
                     <li>
-                      <Link>Disclosures 3</Link>
+                      <Link to="/annualStockholdersMeeting">
+                        Annuals Stockholder`s Meeting
+                      </Link>
                     </li>
                     <li>
-                      <Link>Disclosures 4</Link>
+                      <Link to="/secFilings">SEC Filings</Link>
                     </li>
                     <li>
-                      <Link>Disclosures 5</Link>
+                      <Link to="/complianceAndAMLA">Compliance and AMLA</Link>
                     </li>
                   </>
                 ) : null}
