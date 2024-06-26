@@ -47,27 +47,27 @@ const Subsidiaries = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoLeasing">
               BDO Leasing
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoNetworkBank">
               BDO Network Bank
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoPrivateBank">
               BDO Private Bank
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoRemit">
               BDO Remit
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" to="#">
+            <Link className="dropdown-item" to="/bdoSecurities">
               BDO Securities
             </Link>
           </li>

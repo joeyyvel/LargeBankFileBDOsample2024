@@ -25,17 +25,17 @@ const Branches = () => {
         </button>
         <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
           <li>
-            <Link className="dropdown-item py-3 " to="#">
+            <Link className="dropdown-item py-3 " to="/bookAVisit">
               Book a Visit
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/branchAndAtmLocator">
               Branch and ATM Locator
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/branchUpdates">
               Branch Updates
             </Link>
           </li>

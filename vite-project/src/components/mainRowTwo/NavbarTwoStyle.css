@@ -7,4 +7,5 @@
 .navRowTwo {
   height: 81px;
   background-color: #004ea8;
+  display: flex;
 }

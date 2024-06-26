@@ -39,6 +39,14 @@ import BdoFinance from "./components/mainRowOne/subsidiariesChildContent/BdoFina
 import BdoFoundation from "./components/mainRowOne/subsidiariesChildContent/BdoFoundation";
 import BdoInsure from "./components/mainRowOne/subsidiariesChildContent/BdoInsure";
 import BdoLife from "./components/mainRowOne/subsidiariesChildContent/BdoLife";
+import BdoLeasing from "./components/mainRowOne/subsidiariesChildContent/BdoLeasing";
+import BdoNetworkBank from "./components/mainRowOne/subsidiariesChildContent/BdoNetworkBank";
+import BdoPrivateBank from "./components/mainRowOne/subsidiariesChildContent/BdoPrivateBank";
+import BdoRemit from "./components/mainRowOne/subsidiariesChildContent/BdoRemit";
+import BdoSecurities from "./components/mainRowOne/subsidiariesChildContent/BdoSecurities";
+import BookAVisit from "./components/mainRowOne/branchesChildContent/BookAVisit";
+import BranchAndAtmLocator from "./components/mainRowOne/branchesChildContent/BranchAndAtmLocator";
+import BranchUpdates from "./components/mainRowOne/branchesChildContent/BranchUpdates";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -90,4 +98,12 @@ export const router = createBrowserRouter([
   { path: "/bdoFoundation", element: <BdoFoundation /> },
   { path: "/bdoInsure", element: <BdoInsure /> },
   { path: "/bdoLife", element: <BdoLife /> },
+  { path: "/bdoLeasing", element: <BdoLeasing /> },
+  { path: "/bdoNetworkBank", element: <BdoNetworkBank /> },
+  { path: "/bdoPrivateBank", element: <BdoPrivateBank /> },
+  { path: "/bdoRemit", element: <BdoRemit /> },
+  { path: "/bdoSecurities", element: <BdoSecurities /> },
+  { path: "/bookAVisit", element: <BookAVisit /> },
+  { path: "/branchAndAtmLocator", element: <BranchAndAtmLocator /> },
+  { path: "/branchUpdates", element: <BranchUpdates /> },
 ]);
