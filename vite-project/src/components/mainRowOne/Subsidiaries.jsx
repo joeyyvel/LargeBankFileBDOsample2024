@@ -22,27 +22,27 @@ const Subsidiaries = () => {
         </button>
         <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoCapital">
               BDO Capital
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoFinance">
               BDO Finance
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoFoundation">
               BDO Foundation
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoInsure">
               BDO Insure
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item py-3" to="#">
+            <Link className="dropdown-item py-3" to="/bdoLife">
               BDO life
             </Link>
           </li>

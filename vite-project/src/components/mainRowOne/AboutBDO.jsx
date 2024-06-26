@@ -267,16 +267,16 @@ const AboutBDO = () => {
                 {show5 ? (
                   <>
                     <li>
-                      <Link>Learn 1</Link>
+                      <Link to="/learnOverview">Learn Overview</Link>
                     </li>
                     <li>
-                      <Link>Learn 2</Link>
+                      <Link to="/newsAndFeatures">News and Features</Link>
                     </li>
                     <li>
-                      <Link>Learn 3</Link>
+                      <Link to="/bdoStopScam">BDO Stop Scam</Link>
                     </li>
                     <li>
-                      <Link>Learn 4</Link>
+                      <Link to="/helpAndSupport">Help and Support</Link>
                     </li>
                   </>
                 ) : null}

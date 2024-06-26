@@ -31,6 +31,14 @@ import Ownership from "./components/mainRowOne/aboutChildContent/Ownership";
 import AnnualStockholdersMeeting from "./components/mainRowOne/aboutChildContent/AnnualStockholdersMeeting";
 import SecFilings from "./components/mainRowOne/aboutChildContent/SecFilings";
 import ComplianceAndAMLA from "./components/mainRowOne/aboutChildContent/ComplianceAndAMLA";
+import LearnOverview from "./components/mainRowOne/aboutChildContent/LearnOverview";
+import BDOstopScam from "./components/mainRowOne/aboutChildContent/BDOstopScam";
+import HelpAndSupport from "./components/mainRowOne/aboutChildContent/HelpAndSupport";
+import BdoCapital from "./components/mainRowOne/subsidiariesChildContent/BdoCapital";
+import BdoFinance from "./components/mainRowOne/subsidiariesChildContent/BdoFinance";
+import BdoFoundation from "./components/mainRowOne/subsidiariesChildContent/BdoFoundation";
+import BdoInsure from "./components/mainRowOne/subsidiariesChildContent/BdoInsure";
+import BdoLife from "./components/mainRowOne/subsidiariesChildContent/BdoLife";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -74,4 +82,12 @@ export const router = createBrowserRouter([
   },
   { path: "/secFilings", element: <SecFilings /> },
   { path: "/complianceAndAMLA", element: <ComplianceAndAMLA /> },
+  { path: "/learnOverview", element: <LearnOverview /> },
+  { path: "/bdoStopScam", element: <BDOstopScam /> },
+  { path: "/helpAndSupport", element: <HelpAndSupport /> },
+  { path: "/bdoCapital", element: <BdoCapital /> },
+  { path: "/bdoFinance", element: <BdoFinance /> },
+  { path: "/bdoFoundation", element: <BdoFoundation /> },
+  { path: "/bdoInsure", element: <BdoInsure /> },
+  { path: "/bdoLife", element: <BdoLife /> },
 ]);
