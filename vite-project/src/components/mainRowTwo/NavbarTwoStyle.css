@@ -9,3 +9,69 @@
   background-color: #004ea8;
   display: flex;
 }
+/*----------------Center logo and div---------------*/
+.bdoLogo {
+  margin: auto;
+  padding-left: 2.6rem;
+}
+
+.personal {
+  padding: 19px 28px;
+  margin-left: -25px;
+}
+.personal:hover {
+  background-color: #0072d8;
+}
+
+.business {
+  padding: 22px 28px;
+}
+.business:hover {
+  background-color: #0072d8;
+}
+
+.searchApplyLogin {
+  display: flex;
+  margin: auto;
+}
+
+.search {
+  margin: auto;
+  padding: 19px 20px;
+  position: relative;
+}
+.search:hover {
+  background-color: #0072d8;
+}
+
+.apply {
+  margin: auto;
+  padding: 19px 20px;
+  position: relative;
+}
+.apply:hover {
+  background-color: #0072d8;
+}
+
+.logIn {
+  margin: auto;
+  padding: 19px 20px;
+  position: relative;
+  background-color: pink;
+}
+
+.one {
+  color: gray;
+  position: absolute;
+  padding: 33px 20px;
+  top: -1px;
+  z-index: 10;
+  background-color: blue;
+  opacity: 0.3;
+}
+
+.one:hover {
+  background-color: #0072d8;
+  transform: rotate(90deg);
+  transition: all ease-in-out 1.4s;
+}
