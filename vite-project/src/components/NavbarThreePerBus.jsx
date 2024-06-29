@@ -2,6 +2,8 @@ import { PersonalMenuItem } from "./personalRow/PersonalMenuItem";
 import { BusinessMenuItem } from "./businessRow/BusinessMenuItem";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "../components/personalRow/PersonalMainPageStyle.css";
+import "../components/businessRow/BusinessMainPageStyle.css";
 
 const NavbarThreePerBus = () => {
   const [show, setShow] = useState(false);

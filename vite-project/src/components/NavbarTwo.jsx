@@ -25,6 +25,7 @@ const NavbarTwo = () => {
                 position: "relative",
                 top: "8px",
               }}
+              to="/personalPage"
             >
               Personal
             </Link>
@@ -41,6 +42,7 @@ const NavbarTwo = () => {
                 fontFamily: "Nunito",
                 fontWeight: "700",
               }}
+              to="/businessPage"
             >
               Business
             </Link>

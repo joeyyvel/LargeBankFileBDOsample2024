@@ -47,6 +47,8 @@ import BdoSecurities from "./components/mainRowOne/subsidiariesChildContent/BdoS
 import BookAVisit from "./components/mainRowOne/branchesChildContent/BookAVisit";
 import BranchAndAtmLocator from "./components/mainRowOne/branchesChildContent/BranchAndAtmLocator";
 import BranchUpdates from "./components/mainRowOne/branchesChildContent/BranchUpdates";
+import PersonalPage from "./components/personalRow/PersonalPage";
+import BusinessPage from "./components/businessRow/BusinessPage";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -106,4 +108,6 @@ export const router = createBrowserRouter([
   { path: "/bookAVisit", element: <BookAVisit /> },
   { path: "/branchAndAtmLocator", element: <BranchAndAtmLocator /> },
   { path: "/branchUpdates", element: <BranchUpdates /> },
+  { path: "/personalPage", element: <PersonalPage /> },
+  { path: "/businessPage", element: <BusinessPage /> },
 ]);

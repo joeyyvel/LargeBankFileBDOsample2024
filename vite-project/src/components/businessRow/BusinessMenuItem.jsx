@@ -25,7 +25,7 @@ export const BusinessMenuItem = [
     cName: "business-links",
   },
   {
-    title: "/Corporate Cards",
+    title: "Corporate Cards",
     url: "/corporateCards",
     cName: "business-links",
   },
