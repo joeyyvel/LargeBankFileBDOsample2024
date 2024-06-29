@@ -122,8 +122,8 @@ const NavbarTwo = () => {
               >
                 Login
               </Link>
+              <i className="fa-solid fa-caret-down one"></i>
             </p>
-            <i className="fa-solid fa-caret-down one"></i>
           </div>
         </div>
       </div>

@@ -57,21 +57,15 @@
   margin: auto;
   padding: 19px 20px;
   position: relative;
-  background-color: pink;
+}
+
+.logIn:hover {
+  background-color: #0072d8;
 }
 
 .one {
-  color: gray;
-  position: absolute;
-  padding: 33px 20px;
-  top: -1px;
-  z-index: 10;
-  background-color: blue;
-  opacity: 0.3;
-}
-
-.one:hover {
-  background-color: #0072d8;
-  transform: rotate(90deg);
-  transition: all ease-in-out 1.4s;
+  color: red;
+  position: relative;
+  left: 10px;
+  top: 8px;
 }

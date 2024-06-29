@@ -1,0 +1,23 @@
+.perMenu {
+  margin: auto;
+  background-color: white;
+  height: 5rem;
+  width: 100%;
+}
+
+.personalMenu {
+  display: flex;
+  justify-content: space-around;
+  height: 3.5rem;
+  width: 68%;
+  margin: auto;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
+  background-color: orange;
+  padding-top: 14px;
+}
+
+ul {
+  list-style-type: none;
+}
