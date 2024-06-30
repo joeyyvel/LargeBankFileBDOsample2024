@@ -49,6 +49,7 @@ import BranchAndAtmLocator from "./components/mainRowOne/branchesChildContent/Br
 import BranchUpdates from "./components/mainRowOne/branchesChildContent/BranchUpdates";
 import PersonalPage from "./components/personalRow/PersonalPage";
 import BusinessPage from "./components/businessRow/BusinessPage";
+import Login from "./components/mainRowTwo/loginChildContent/Login";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -110,4 +111,5 @@ export const router = createBrowserRouter([
   { path: "/branchUpdates", element: <BranchUpdates /> },
   { path: "/personalPage", element: <PersonalPage /> },
   { path: "/businessPage", element: <BusinessPage /> },
+  { path: "/login", element: <Login /> },
 ]);

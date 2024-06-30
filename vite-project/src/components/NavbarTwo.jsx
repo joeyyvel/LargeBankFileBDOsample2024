@@ -4,6 +4,7 @@ import SearchIcon from "../components/images/search-icon.png";
 import ApplyIcon from "../components/images/apply-icon.png";
 import loginIcon from "../components/images/loginicon.png";
 import { Link } from "react-router-dom";
+import "../components/mainRowTwo/loginChildContent/Login.css";
 const NavbarTwo = () => {
   return (
     <>
@@ -101,32 +102,70 @@ const NavbarTwo = () => {
               </Link>
             </p>
           </div>
-          <div className="logIn" style={{ display: "flex" }}>
+
+          {/* ------------------------Login with own div area------------------------ */}
+          <div
+            className="logIn"
+            style={{
+              display: "flex",
+            }}
+          >
             <img
               src={loginIcon}
               width={33}
               height={33}
               alt="loginIcon"
-              style={{ position: "relative", top: "4px" }}
+              style={{
+                position: "absolute",
+                zIndex: "2",
+                left: "0",
+                marginTop: "-17px",
+              }}
             />
-            <p>
-              <Link
+
+            <div className="dropdown" style={{ fontWeight: "bolder" }}>
+              <button
+                className="btn mt-2 fw-bold border-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
                 style={{
-                  textDecoration: "none",
                   color: "white",
-                  fontSize: "18px",
-                  fontWeight: "400",
                   fontFamily: "Nunito",
-                  paddingLeft: "20px",
-                  position: "relative",
-                  top: "7px",
+                  fontSize: "18px",
+                  position: "absolute",
+                  top: "-47px",
+                  marginLeft: "-40px",
+                  padding: "27px 60px",
+                  zIndex: "1",
                 }}
               >
                 Login
-              </Link>
-              <i className="fa-solid fa-caret-down one"></i>
-            </p>
+              </button>
+              <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
+                <li>
+                  <Link className="dropdown-item py-3 " to="/bookAVisit">
+                    Book a Visit
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item py-3"
+                    to="/branchAndAtmLocator"
+                  >
+                    Branch and ATM Locator
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item py-3" to="/branchUpdates">
+                    Branch Updates
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          {/*------------------inserted login components-------------- */}
         </div>
       </div>
     </>
