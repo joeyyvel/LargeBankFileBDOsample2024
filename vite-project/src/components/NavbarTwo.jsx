@@ -4,8 +4,15 @@ import SearchIcon from "../components/images/search-icon.png";
 import ApplyIcon from "../components/images/apply-icon.png";
 import loginIcon from "../components/images/loginicon.png";
 import { Link } from "react-router-dom";
-import "../components/mainRowTwo/loginChildContent/Login.css";
+
 const NavbarTwo = () => {
+  const handleMouseEnter = (e) => {
+    e.target.style.background = "#0072d8";
+  };
+  const handleMouseLeave = (e) => {
+    e.target.style.background = "none";
+  };
+
   return (
     <>
       <div className="navRowTwo">
@@ -120,7 +127,11 @@ const NavbarTwo = () => {
                 zIndex: "2",
                 left: "0",
                 marginTop: "-17px",
+                marginLeft: "20px",
+                borderRadius: "7px",
               }}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             />
 
             <div className="dropdown" style={{ fontWeight: "bolder" }}>
@@ -134,15 +145,57 @@ const NavbarTwo = () => {
                   fontFamily: "Nunito",
                   fontSize: "18px",
                   position: "absolute",
-                  top: "-47px",
-                  marginLeft: "-40px",
+                  top: "-49px",
+                  marginLeft: "-19px",
                   padding: "27px 60px",
                   zIndex: "1",
                 }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 Login
               </button>
-              <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
+
+              <ul
+                className="dropdown-menu rounded-0 p-0 border-0 mt-5"
+                id="myUl"
+              >
+                <li id="myList">
+                  <Link
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontFamily: "Nunito",
+                      fontSize: "16px",
+                      fontWeight: "400",
+                      paddingLeft: "17px",
+                    }}
+                  >
+                    Personal
+                  </Link>
+                </li>
+                <li id="myList">
+                  <Link
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontFamily: "Nunito",
+                      fontSize: "16px",
+                      fontWeight: "400",
+                      paddingLeft: "17px",
+                      paddingTop: "10px",
+                    }}
+                  >
+                    Business
+                  </Link>
+                </li>
+              </ul>
+
+              {/*          
+              <ul
+                className="dropdown-menu rounded-0 p-0 border-0 mt-5"
+                style={{}}
+              >
                 <li>
                   <Link className="dropdown-item py-3 " to="/bookAVisit">
                     Book a Visit
@@ -162,10 +215,9 @@ const NavbarTwo = () => {
                   </Link>
                 </li>
               </ul>
+          */}
             </div>
           </div>
-
-          {/*------------------inserted login components-------------- */}
         </div>
       </div>
     </>

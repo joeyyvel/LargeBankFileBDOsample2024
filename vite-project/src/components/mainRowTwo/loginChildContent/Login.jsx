@@ -5,7 +5,7 @@ const Login = () => {
     <div>
       <div className="dropdown">
         <button
-          className="btn mt-2 fw-bold border-0 btn-login"
+          className="btn mt-2 fw-bold border-0 "
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"

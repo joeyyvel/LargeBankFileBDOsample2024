@@ -58,14 +58,29 @@
   padding: 19px 20px;
   position: relative;
 }
-
+/*
 .logIn:hover {
-  background-color: #0072d8;
+ background-color: #0072d8;
 }
-
+*/
 .one {
   color: red;
   position: relative;
   left: 10px;
   top: 8px;
+}
+/*--------------------Drop down list ffrom login -------------------*/
+#myUl {
+  background-color: orange;
+  left: -4rem;
+  top: -9px;
+  width: 13.2rem;
+}
+
+#myList {
+  background-color: white;
+  height: 60px;
+  position: relative;
+  border: 2px solid green;
+  list-style-type: none;
 }
