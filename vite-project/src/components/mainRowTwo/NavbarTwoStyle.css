@@ -71,7 +71,6 @@
 }
 /*--------------------Drop down list ffrom login -------------------*/
 #myUl {
-  background-color: orange;
   left: -4rem;
   top: -9px;
   width: 13.2rem;
@@ -81,6 +80,11 @@
   background-color: white;
   height: 60px;
   position: relative;
-  border: 2px solid green;
+
   list-style-type: none;
+  padding-block: 11px;
+}
+#myList:hover {
+  background-color: #e5f5ff;
+  border-radius: 0 0 10px 10px;
 }
