@@ -136,7 +136,7 @@ const NavbarTwo = () => {
 
             <div className="dropdown" style={{ fontWeight: "bolder" }}>
               <button
-                className="btn mt-2 fw-bold border-0"
+                className="btn mt-2 fw-bold border-0 rounded-0"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -149,73 +149,14 @@ const NavbarTwo = () => {
                   marginLeft: "-19px",
                   padding: "27px 60px",
                   zIndex: "1",
+                  backgroundColor: "orange",
+                  borderRadius: "none",
                 }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
                 Login
               </button>
-
-              <ul
-                className="dropdown-menu rounded-0 p-0 border-0 mt-5"
-                id="myUl"
-              >
-                <li id="myList">
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                      color: "black",
-                      fontFamily: "Nunito",
-                      fontSize: "16px",
-                      fontWeight: "400",
-                      paddingLeft: "17px",
-                    }}
-                  >
-                    Personal
-                  </Link>
-                </li>
-                <li id="myList">
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                      color: "black",
-                      fontFamily: "Nunito",
-                      fontSize: "16px",
-                      fontWeight: "400",
-                      paddingLeft: "17px",
-                      paddingTop: "10px",
-                    }}
-                  >
-                    Business
-                  </Link>
-                </li>
-              </ul>
-
-              {/*          
-              <ul
-                className="dropdown-menu rounded-0 p-0 border-0 mt-5"
-                style={{}}
-              >
-                <li>
-                  <Link className="dropdown-item py-3 " to="/bookAVisit">
-                    Book a Visit
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item py-3"
-                    to="/branchAndAtmLocator"
-                  >
-                    Branch and ATM Locator
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item py-3" to="/branchUpdates">
-                    Branch Updates
-                  </Link>
-                </li>
-              </ul>
-          */}
             </div>
           </div>
         </div>
