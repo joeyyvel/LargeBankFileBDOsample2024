@@ -50,6 +50,13 @@ import BranchUpdates from "./components/mainRowOne/branchesChildContent/BranchUp
 import PersonalPage from "./components/personalRow/PersonalPage";
 import BusinessPage from "./components/businessRow/BusinessPage";
 import Login from "./components/mainRowTwo/loginChildContent/Login";
+import BdoOnlineBanking from "./components/mainRowTwo/loginChildContent/BdoOnlineBanking";
+import NetworkBank from "./components/mainRowTwo/loginChildContent/NetworkBank";
+import CashCard from "./components/mainRowTwo/loginChildContent/CashCard";
+import IntegratedDisbursementSolutions from "./components/mainRowTwo/loginChildContent/IntegratedDisbursementSolutions";
+import BusinessOnlineBanking from "./components/mainRowTwo/loginChildContent/BusinessOnlineBanking";
+import NetworkBankEnroll from "./components/mainRowTwo/loginChildContent/NetworkBankEnroll";
+import PersonalMainPage from "./routes/PersonalMainPage";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -112,4 +119,15 @@ export const router = createBrowserRouter([
   { path: "/personalPage", element: <PersonalPage /> },
   { path: "/businessPage", element: <BusinessPage /> },
   { path: "/login", element: <Login /> },
+  { path: "/bdoOnlineBanking", element: <BdoOnlineBanking /> },
+  { path: "/bdoSecurities", element: <BdoSecurities /> },
+  { path: "/netWorkBank", element: <NetworkBank /> },
+  { path: "/cashCard", element: <CashCard /> },
+  {
+    path: "/integratedDisbursementSolutions",
+    element: <IntegratedDisbursementSolutions />,
+  },
+  { path: "/businessOnlineBanking", element: <BusinessOnlineBanking /> },
+  { path: "/networkBankEnroll", element: <NetworkBankEnroll /> },
+  { path: "/personalMainPage", element: <PersonalMainPage /> },
 ]);

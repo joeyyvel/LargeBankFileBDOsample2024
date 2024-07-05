@@ -5,16 +5,17 @@ import ApplyIcon from "../components/images/apply-icon.png";
 import loginIcon from "../components/images/loginicon.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 const NavbarTwo = () => {
-  // const handleMouseEnter = (e) => {
-  //   e.target.style.background = "#0072d8";
-  // };
-  // const handleMouseLeave = (e) => {
-  //   e.target.style.background = "none";
-  // };
+  const handleMouseEnter = (e) => {
+    e.target.style.background = "#0072d8";
+  };
+  const handleMouseLeave = (e) => {
+    e.target.style.background = "none";
+  };
 
   const [show, setShow] = useState(false);
-  const [show2, setShow2] = useState(false);
+  const [show1, setShow1] = useState(false);
 
   return (
     <>
@@ -28,6 +29,7 @@ const NavbarTwo = () => {
         <div className="personal">
           <p>
             <Link
+              to="/personalMainPage"
               style={{
                 textDecoration: "none",
                 fontSize: "18px",
@@ -36,7 +38,6 @@ const NavbarTwo = () => {
                 position: "relative",
                 top: "8px",
               }}
-              to="/personalPage"
             >
               Personal
             </Link>
@@ -105,6 +106,7 @@ const NavbarTwo = () => {
                   fontFamily: "Nunito",
                   paddingLeft: "20px",
                   position: "relative",
+                  paddingRight: "15px",
                   top: "7px",
                 }}
               >
@@ -115,7 +117,7 @@ const NavbarTwo = () => {
 
           {/* ------------------------Login with own div area------------------------ */}
 
-          <div className="login">
+          <div className="login dropdown">
             <img
               src={loginIcon}
               alt=""
@@ -123,99 +125,88 @@ const NavbarTwo = () => {
                 position: "relative",
                 height: "35px",
                 paddingRight: "17px",
-                marginTop: "46px",
+                marginTop: "24px",
               }}
             />
-            <div className="login2" style={{ display: "flex" }}>
-              Login
-              {/*--------start------*/}
-              <div className="dropdown" id="myDropDown">
-                <button className="dropBtn dropdown-toggle"></button>
-                <div className="dropdown-content">
-                  {/*---------Toggle personal button-------*/}
-                  <Link
-                    className="personalLink dropdown-toggle"
-                    onClick={() => setShow(!show)}
-                    to="#"
-                  >
-                    Personal
-                  </Link>
+            <div className="loginDiv">
+              <button
+                className="dropBtn"
+                style={{ background: "#004EA8", color: "white" }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                Login
+              </button>
+              <div className="dropdown-content">
+                <Link
+                  className="personalLink dropdown-toggle"
+                  onClick={() => setShow(!show)}
+                  to=""
+                >
+                  Personal
+                </Link>
+                {show ? (
+                  <ul id="myUl">
+                    <li>
+                      <Link id="pLink" to="/bdoOnlineBanking">
+                        BDO Online Banking
+                      </Link>
+                    </li>
+                    <li>
+                      <Link id="pLink" to="/bdoSecurities">
+                        BDO Securities
+                      </Link>
+                    </li>
+                    <li>
+                      <Link id="pLink" to="/networkBank">
+                        Network Bank
+                      </Link>
+                    </li>
+                  </ul>
+                ) : null}
 
-                  {show ? (
-                    <ul style={{ display: "block" }}>
-                      <li style={{ marginLeft: "-20px" }}>
-                        <Link className="personalLink" to="/bdoOnlineBanking">
-                          BDO Online Banking
-                        </Link>
-                      </li>
-                      <li style={{ marginLeft: "-20px" }}>
-                        <Link className="personalLink" to="/bdoSecurities">
-                          BDO Securities
-                        </Link>
-                      </li>
-                      <li style={{ marginLeft: "-20px" }}>
-                        <Link className="personalLink" to="/networkBank">
-                          Network Bank
-                        </Link>
-                      </li>
-                    </ul>
-                  ) : null}
-
-                  {/*---------------end of personal drop button*/}
-
-                  {/*----------------Business area Link-------------*/}
-
-                  <li
-                    style={{
-                      marginLeft: "1px",
-                    }}
-                  >
-                    <Link
-                      style={{ marginLeft: "1px", marginTop: "-20px" }}
-                      className="businessLink dropdown-toggle"
-                      onClick={() => setShow2(!show2)}
-                      href="#"
-                    >
-                      Business
-                    </Link>
-                  </li>
-                  {/*-----------Start of toggle business----------*/}
-                  {show2 ? (
-                    <ul style={{ display: "block" }}>
-                      <li style={{ marginLeft: "13px" }}>
-                        <Link className="businessLink" to="/cashCard">
-                          Cash Card
-                        </Link>
-                      </li>
-                      <li style={{ marginLeft: "13px" }}>
-                        <Link
-                          className="businessLink"
-                          to="integratedDisbursementSolution"
-                        >
-                          Integrated Disbursement Solutions
-                        </Link>
-                      </li>
-                      <li style={{ marginLeft: "13px" }}>
-                        <Link
-                          className="businessLink"
-                          to="/businessOnlineBanking"
-                        >
-                          Business Online Banking
-                        </Link>
-                      </li>
-                      <li style={{ marginLeft: "13px" }}>
-                        <Link className="businessLink" to="/networkBank">
-                          Network Bank
-                        </Link>
-                      </li>
-                    </ul>
-                  ) : null}
-                  {/*-------end of business button-----*/}
-                </div>
+                <Link
+                  className="businessLink dropdown-toggle"
+                  onClick={() => setShow1(!show1)}
+                  to="/"
+                >
+                  Business
+                </Link>
+                {show1 ? (
+                  <ul id="myUl1">
+                    <li>
+                      <Link id="bLink" to="/cashCard">
+                        Cash Card
+                      </Link>
+                    </li>
+                    <li>
+                      <Link id="bLink" to="/integratedDisbursementSolutions">
+                        Integrated Disbursement Solutions
+                      </Link>
+                    </li>
+                    <li>
+                      <Link id="bLink" to="/businessOnlineBanking">
+                        Business Online Banking
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        id="bLink"
+                        to="/networkBankEnroll"
+                        style={{
+                          borderRadius: "0 0 8px 8px",
+                        }}
+                      >
+                        Network Bank
+                      </Link>
+                    </li>
+                  </ul>
+                ) : null}
               </div>
-              {/*--------end--------*/}
             </div>
           </div>
+
+          {/* End of login */}
         </div>
       </div>
     </>
