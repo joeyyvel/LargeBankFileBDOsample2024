@@ -16,7 +16,7 @@ export const BusinessMenuItem = [
   },
   {
     title: "International Banking",
-    url: "/investments",
+    url: "/internationalBanking",
     cName: "business-links",
   },
   {

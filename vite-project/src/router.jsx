@@ -57,6 +57,19 @@ import IntegratedDisbursementSolutions from "./components/mainRowTwo/loginChildC
 import BusinessOnlineBanking from "./components/mainRowTwo/loginChildContent/BusinessOnlineBanking";
 import NetworkBankEnroll from "./components/mainRowTwo/loginChildContent/NetworkBankEnroll";
 import PersonalMainPage from "./routes/PersonalMainPage";
+import Accounts from "./components/personalRow/Accounts";
+import Cards from "./components/personalRow/Cards";
+import Digital from "./components/personalRow/Digital";
+import Loans from "./components/personalRow/Loans";
+import Insurance from "./components/personalRow/Insurance";
+import Investments from "./components/personalRow/Investments";
+import Remittance from "./components/personalRow/Remittance";
+import AssetsForSale from "./components/personalRow/AssetsForSale";
+import Financing from "./components/businessRow/Financing";
+import BusinessServices from "./components/businessRow/BusinessServices";
+import InternationalBanking from "./components/businessRow/InternationalBanking";
+import CorporateInsurance from "./components/businessRow/CorporateInsurance";
+import CorporateCards from "./components/businessRow/CorporateCards";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -130,4 +143,18 @@ export const router = createBrowserRouter([
   { path: "/businessOnlineBanking", element: <BusinessOnlineBanking /> },
   { path: "/networkBankEnroll", element: <NetworkBankEnroll /> },
   { path: "/personalMainPage", element: <PersonalMainPage /> },
+  { path: "/accounts", element: <Accounts /> },
+  { path: "/cards", element: <Cards /> },
+  { path: "/digital", element: <Digital /> },
+  { path: "/loans", element: <Loans /> },
+  { path: "/insurance", element: <Insurance /> },
+  { path: "/investments", element: <Investments /> },
+  { path: "/remittance", element: <Remittance /> },
+  { path: "/assetsForSale", element: <AssetsForSale /> },
+  { path: "/financing", element: <Financing /> },
+  { path: "/businessServices", element: <BusinessServices /> },
+  { path: "/investments", element: <Investments /> },
+  { path: "/internationalBanking", element: <InternationalBanking /> },
+  { path: "/corporateInsurance", element: <CorporateInsurance /> },
+  { path: "/corporateCards", element: <CorporateCards /> },
 ]);

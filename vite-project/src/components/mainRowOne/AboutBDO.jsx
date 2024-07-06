@@ -1,3 +1,4 @@
+import "../mainRowOne/AboutBDOstyle.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -8,14 +9,19 @@ const AboutBDO = () => {
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
   const [show5, setShow5] = useState(false);
+
   return (
     <>
       <div className="dropdown">
         <button
-          className="btn mt-2  fw-bold border-0 hover-color-red"
+          className="btn mt-2  fw-bold border-0"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          style={{
+            marginLeft: "8px",
+            marginRight: "15px",
+          }}
         >
           About BDO
           <i
@@ -27,263 +33,173 @@ const AboutBDO = () => {
             }}
           ></i>
         </button>
-        <ul className="dropdown-menu rounded-0 p-0 border-0 mt-1">
-          <li>
-            <Link
-              className="dropdown dropdown-item py-3"
-              onClick={() => setShow(!show)}
-            >
-              Corporate Profile
-              <i
-                className="fa-solid fa-caret-down"
-                style={{
-                  paddingLeft: "3.5rem",
-                  fontSize: "12px",
-                  color: "gray",
-                }}
-              ></i>
-              <div className="dropOne">
-                {show ? (
-                  <>
-                    <li>
-                      <Link to="/corporateProfileOverview">
-                        Corporate Profile Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/corporateDocuments">Corporate Documents</Link>
-                    </li>
-                    <li>
-                      <Link to="/awardsAndRecognition">
-                        Awards & Recognitions
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/shareholderStructure">
-                        Shareholder Structure
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/organizationalStructure">
-                        Organizational Structure
-                      </Link>
-                    </li>
-                  </>
-                ) : null}
-              </div>
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              className="dropdown-item py-3"
-              onClick={() => setShow1(!show1)}
-            >
-              Investor Relations
-              <i
-                className="fa-solid fa-caret-down"
-                style={{
-                  paddingLeft: "3rem",
-                  fontSize: "12px",
-                  color: "gray",
-                }}
-              ></i>
-              <div className="dropTwo">
-                {show1 ? (
-                  <>
-                    <li>
-                      <Link to="/investorRelationsOverview">
-                        Investor Relations Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/financials">Financials</Link>
-                    </li>
-                    <li>
-                      <Link to="/PresentationsAndEvents">
-                        Presentations and Events
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/capitalAndFunding">Capital and Funding</Link>
-                    </li>
-                    <li>
-                      <Link to="/shareInformation">Share Information</Link>
-                    </li>
-                    <li>
-                      <Link to="/frequentlyAskedQuestions">
-                        Frequently Asked Questions
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/contactInformation">Contact information</Link>
-                    </li>
-                  </>
-                ) : null}
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="dropdown-item py-3 m-0 "
-              onClick={() => setShow2(!show2)}
-            >
-              Corporate Governance
-              <i
-                className="fa-solid fa-caret-down"
-                style={{
-                  paddingLeft: "1.1rem",
-                  fontSize: "12px",
-                  color: "gray",
-                }}
-              ></i>
-              <div className="dropThree">
-                {show2 ? (
-                  <>
-                    <li>
-                      <Link to="/corporateGovernanceOverview">
-                        Corporate Governance Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/governanceStructure">
-                        Governance Structure
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/governanceManual">Governance Manual</Link>
-                    </li>
-                    <li>
-                      <Link to="/companyPolicies">Companies Policies</Link>
-                    </li>
-                    <li>
-                      <Link to="/governanceStandard">Governance Standards</Link>
-                    </li>
-                    <li>
-                      <Link to="/enterpriseRisk">Enterprise Risk</Link>
-                    </li>
-                  </>
-                ) : null}
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="dropdown-item py-3"
-              onClick={() => setShow3(!show3)}
-            >
-              Sustainability
-              <i
-                className="fa-solid fa-caret-down"
-                style={{
-                  paddingLeft: "5rem",
-                  fontSize: "12px",
-                  color: "gray",
-                }}
-              ></i>
-              <div className="dropFour">
-                {show3 ? (
-                  <>
-                    <li>
-                      <Link to="/sustainabilityOverview">
-                        Sustainability Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/sustainableFinance">Sustainable Finance</Link>
-                    </li>
-                    <li>
-                      <Link to="/sustainabilityReporting">
-                        Sustainability Reporting
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/newsAndFeatures">News and Features</Link>
-                    </li>
-                    <li>
-                      <Link to="/esgAwards">ESG Awards</Link>
-                    </li>
-                  </>
-                ) : null}
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="dropdown-item py-3"
-              onClick={() => setShow4(!show4)}
-            >
-              All Disclosures
-              <i
-                className="fa-solid fa-caret-down"
-                style={{
-                  paddingLeft: "4.2rem",
-                  fontSize: "12px",
-                  color: "gray",
-                }}
-              ></i>
-              <div className="dropFive">
-                {show4 ? (
-                  <>
-                    <li>
-                      <Link to="/allDisclosuresOverview">
-                        All Disclosures Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/ownership">Ownership</Link>
-                    </li>
-                    <li>
-                      <Link to="/annualStockholdersMeeting">
-                        Annuals Stockholder`s Meeting
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/secFilings">SEC Filings</Link>
-                    </li>
-                    <li>
-                      <Link to="/complianceAndAMLA">Compliance and AMLA</Link>
-                    </li>
-                  </>
-                ) : null}
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="dropdown-item py-3"
-              onClick={() => setShow5(!show5)}
-            >
-              Learn
-              <i
-                className="fa-solid fa-caret-down"
-                style={{
-                  paddingLeft: "8.3rem",
-                  fontSize: "12px",
-                  color: "gray",
-                }}
-              ></i>
-              <div className="dropSix">
-                {show5 ? (
-                  <>
-                    <li>
-                      <Link to="/learnOverview">Learn Overview</Link>
-                    </li>
-                    <li>
-                      <Link to="/newsAndFeatures">News and Features</Link>
-                    </li>
-                    <li>
-                      <Link to="/bdoStopScam">BDO Stop Scam</Link>
-                    </li>
-                    <li>
-                      <Link to="/helpAndSupport">Help and Support</Link>
-                    </li>
-                  </>
-                ) : null}
-              </div>
-            </Link>
-          </li>
-        </ul>
+        <div className="dropdown-content">
+          <Link
+            className="corporateProfile dropdown-toggle"
+            onClick={() => setShow(!show)}
+            to=""
+          >
+            Corporate Profile
+          </Link>
+          {show ? (
+            <ul id="ulCorp">
+              <li>
+                <Link id="corpLink">Corporate Profile Overview</Link>
+              </li>
+              <li>
+                <Link id="corpLink">Corporate Documents</Link>
+              </li>
+              <li>
+                <Link id="corpLink">Awards & Recognition</Link>
+              </li>
+              <li>
+                <Link id="corpLink">Shareholder Structure</Link>
+              </li>
+              <li>
+                <Link id="corpLink">Organizational Structure</Link>
+              </li>
+            </ul>
+          ) : null}
+          {/* -----------------investor relations div */}
+          <Link
+            className="investorRelations dropdown-toggle"
+            onClick={() => setShow1(!show1)}
+          >
+            Investor Relations
+          </Link>
+          {show1 ? (
+            <ul id="ulInvest">
+              <li>
+                <Link id="ILink">Investor Relations Overview</Link>
+              </li>
+              <li>
+                <Link id="ILink">Financials</Link>
+              </li>
+              <li>
+                <Link id="ILink">Presentations & Events</Link>
+              </li>
+              <li>
+                <Link id="ILink">Capital & Funding</Link>
+              </li>
+              <li>
+                <Link id="ILink">Share Information</Link>
+              </li>
+              <li>
+                <Link id="ILink">Frequent Asked Questions</Link>
+              </li>
+              <li>
+                <Link id="ILink">Contact Information</Link>
+              </li>
+            </ul>
+          ) : null}
+          {/* --------------------corporate governance--------------- */}
+          <Link
+            className="corporateGovernance dropdown-toggle"
+            onClick={() => setShow2(!show2)}
+          >
+            Corporate Governance
+          </Link>
+          {show2 ? (
+            <ul id="ulGovernance">
+              <li>
+                <Link id="GLink">Corporate Governance Overview</Link>
+              </li>
+              <li>
+                <Link id="GLink">Governance Structure</Link>
+              </li>
+              <li>
+                <Link id="GLink">Governance Manual</Link>
+              </li>
+              <li>
+                <Link id="GLink">Company Policies</Link>
+              </li>
+              <li>
+                <Link id="GLink">Governance Standards</Link>
+              </li>
+              <li>
+                <Link id="GLink">Enterprise Risk Management</Link>
+              </li>
+            </ul>
+          ) : null}
+          {/* ----------------------Sustainability------------------ */}
+          <Link
+            className="sustainability dropdown-toggle"
+            onClick={() => setShow3(!show3)}
+          >
+            Sustainability
+          </Link>
+          {show3 ? (
+            <ul id="ulSustainability">
+              <li>
+                <Link id="SLink">Sustainability Overview</Link>
+              </li>
+              <li>
+                <Link id="SLink">Sustainable Finance</Link>
+              </li>
+              <li>
+                <Link id="SLink">Sustainability Reporting</Link>
+              </li>
+              <li>
+                <Link id="SLink">News & Features</Link>
+              </li>
+              <li>
+                <Link id="SLink">ESG Awards</Link>
+              </li>
+            </ul>
+          ) : null}
+          {/* ---------------------All Disclosures------------------- */}
+          <Link
+            className="allDisclosures dropdown-toggle"
+            onClick={() => setShow4(!show4)}
+          >
+            All Disclosures
+          </Link>
+          {show4 ? (
+            <ul id="allUl">
+              <li>
+                <Link id="ALink">All Disclosures Overview</Link>
+              </li>
+              <li>
+                <Link id="ALink">Ownership</Link>
+              </li>
+              <li>
+                <Link id="ALink">Annual Stockholders Meeting</Link>
+              </li>
+              <li>
+                <Link id="ALink">SEC Filings</Link>
+              </li>
+              <li>
+                <Link id="ALink">All Disclosures</Link>
+              </li>
+              <li>
+                <Link id="ALink">Compliance and AMLA</Link>
+              </li>
+            </ul>
+          ) : null}
+          {/* --------------------Learn--------------------------*/}
+          <Link
+            className="learn dropdown-toggle"
+            onClick={() => setShow5(!show5)}
+          >
+            Learn
+          </Link>
+          {show5 ? (
+            <ul id="ulLearn">
+              <li>
+                <Link id="uLink">Learn Overview</Link>
+              </li>
+              <li>
+                <Link id="uLink">News and Features</Link>
+              </li>
+              <li>
+                <Link id="uLink">BDO StopScam</Link>
+              </li>
+              <li>
+                <Link id="uLink">Help & Support</Link>
+              </li>
+            </ul>
+          ) : null}
+        </div>
       </div>
     </>
   );
