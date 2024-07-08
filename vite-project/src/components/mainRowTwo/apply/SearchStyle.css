@@ -3,21 +3,25 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: rgb(243, 241, 237);
-}
 
 .searchDiv {
   text-align: center;
-  background-color: red;
-  width: 81%;
+  width: 80%;
   margin: auto;
   position: relative;
   top: 40px;
-  box-shadow: 5px 5px 10px gray;
+  box-shadow: 3px 5px 12px rgb(141, 131, 131);
+  background-color: white;
 }
 
 #mySearch {
   width: 87%;
   height: 4.2rem;
+  border: none;
+  font-size: 19px;
+}
+
+img {
+  position: relative;
+  left: -21px;
 }

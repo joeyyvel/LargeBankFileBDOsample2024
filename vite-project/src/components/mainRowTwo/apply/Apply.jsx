@@ -1,6 +1,11 @@
+import NavbarOne from "../../NavbarOne";
+import NavbarTwo from "../../NavbarTwo";
+
 const Apply = () => {
   return (
-    <>
+    <body id="apply">
+      <NavbarOne />
+      <NavbarTwo />
       <div>Apply</div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, laborum
@@ -10,7 +15,7 @@ const Apply = () => {
         consectetur ullam eligendi vero voluptate adipisci possimus odio odit
         quod suscipit consequatur.
       </p>
-    </>
+    </body>
   );
 };
 

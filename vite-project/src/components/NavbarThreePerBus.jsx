@@ -19,7 +19,7 @@ const NavbarThreePerBus = () => {
                   <Link
                     className={item.cName}
                     to={item.url}
-                    style={{ textDecoration: "none", color: "#004EA8" }}
+                    style={{ textDecoration: "none", color: "#0A54AB" }}
                   >
                     {item.title}
                   </Link>
