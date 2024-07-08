@@ -73,6 +73,7 @@ const NavbarTwo = () => {
             />
             <p>
               <Link
+                to="/search"
                 style={{
                   textDecoration: "none",
                   color: "white",
@@ -88,6 +89,9 @@ const NavbarTwo = () => {
               </Link>
             </p>
           </div>
+
+          {/*-----------------------------Apply div area-------------------------*/}
+
           <div className="apply" style={{ display: "flex" }}>
             <img
               src={ApplyIcon}
@@ -98,6 +102,7 @@ const NavbarTwo = () => {
             />
             <p>
               <Link
+                to="/apply"
                 style={{
                   textDecoration: "none",
                   color: "white",

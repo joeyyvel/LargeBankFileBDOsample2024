@@ -14,7 +14,11 @@ const BusinessPage = () => {
           {BusinessMenuItem.map((item, index) => {
             return (
               <li key={index}>
-                <Link className={item.cName} to={item.url}>
+                <Link
+                  className={item.cName}
+                  to={item.url}
+                  style={{ textDecoration: "none" }}
+                >
                   {item.title}
                 </Link>
               </li>

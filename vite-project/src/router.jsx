@@ -70,6 +70,9 @@ import BusinessServices from "./components/businessRow/BusinessServices";
 import InternationalBanking from "./components/businessRow/InternationalBanking";
 import CorporateInsurance from "./components/businessRow/CorporateInsurance";
 import CorporateCards from "./components/businessRow/CorporateCards";
+import Investment from "./components/businessRow/Investment";
+import Apply from "./components/mainRowTwo/apply/Apply";
+import Search from "./components/mainRowTwo/apply/Search";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -157,4 +160,7 @@ export const router = createBrowserRouter([
   { path: "/internationalBanking", element: <InternationalBanking /> },
   { path: "/corporateInsurance", element: <CorporateInsurance /> },
   { path: "/corporateCards", element: <CorporateCards /> },
+  { path: "/investment", element: <Investment /> },
+  { path: "/apply", element: <Apply /> },
+  { path: "/search", element: <Search /> },
 ]);

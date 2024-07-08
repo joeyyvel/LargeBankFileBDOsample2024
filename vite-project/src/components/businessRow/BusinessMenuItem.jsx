@@ -10,8 +10,8 @@ export const BusinessMenuItem = [
     cName: "business-links",
   },
   {
-    title: "Investments",
-    url: "/investments",
+    title: "Investment",
+    url: "/investment",
     cName: "business-links",
   },
   {
