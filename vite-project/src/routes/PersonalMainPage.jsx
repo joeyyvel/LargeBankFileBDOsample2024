@@ -20,6 +20,7 @@ const PersonalMainPage = () => {
                   className={item.cName}
                   to={item.url}
                   style={{ textDecoration: "none", color: "#004EA8" }}
+                  id="personLine"
                 >
                   {item.title}
                 </Link>

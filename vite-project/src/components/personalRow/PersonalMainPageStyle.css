@@ -21,3 +21,10 @@
 ul {
   list-style-type: none;
 }
+/*-----------------------link show's underline when on hover----------------*/
+#personLine:hover {
+  color: "orange";
+  border-bottom: 4px solid orange;
+  position: inherit;
+  padding-bottom: 15px;
+}

@@ -29,7 +29,7 @@
 .business:hover {
   background-color: #0072d8;
 }
-
+/*--------------------------search apply login-----------------------*/
 .searchApplyLogin {
   display: flex;
   margin: auto;
@@ -38,8 +38,9 @@
 
 .search {
   margin: auto;
-  padding: 19px 20px;
+  padding: 19px 10px;
   position: relative;
+  width: 9rem;
 }
 .search:hover {
   background-color: #0072d8;
@@ -47,8 +48,9 @@
 
 .apply {
   margin: auto;
-  padding: 19px 20px;
+  padding: 19px 1px;
   position: relative;
+  width: 9rem;
 }
 
 .apply:hover {
@@ -62,7 +64,7 @@
   margin-right: 80px;
   height: 82px;
   display: flex;
-  width: 160px;
+  width: 10rem;
   padding-left: 24px;
 }
 

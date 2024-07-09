@@ -69,7 +69,7 @@ const NavbarTwo = () => {
               width={33}
               height={33}
               alt="searchIcon"
-              style={{ position: "relative", top: "4px" }}
+              style={{ position: "relative", top: "4px", marginLeft: "27px" }}
             />
             <p>
               <Link
@@ -80,7 +80,6 @@ const NavbarTwo = () => {
                   fontSize: "18px",
                   fontWeight: "400",
                   fontFamily: "Nunito",
-                  paddingLeft: "20px",
                   position: "relative",
                   top: "7px",
                 }}
@@ -98,7 +97,7 @@ const NavbarTwo = () => {
               width={33}
               height={33}
               alt="applyIcon"
-              style={{ position: "relative", top: "4px" }}
+              style={{ position: "relative", top: "4px", marginLeft: "40px" }}
             />
             <p>
               <Link
@@ -109,7 +108,7 @@ const NavbarTwo = () => {
                   fontSize: "18px",
                   fontWeight: "400",
                   fontFamily: "Nunito",
-                  paddingLeft: "20px",
+                  paddingLeft: "0px",
                   position: "relative",
                   paddingRight: "15px",
                   top: "7px",
@@ -131,6 +130,7 @@ const NavbarTwo = () => {
                 height: "35px",
                 paddingRight: "17px",
                 marginTop: "24px",
+                marginLeft: "20px",
               }}
             />
             <div className="loginDiv">
