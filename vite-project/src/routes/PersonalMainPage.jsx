@@ -4,14 +4,16 @@ import NavbarTwo from "../components/NavbarTwo";
 import { PersonalMenuItem } from "../components/personalRow/PersonalMenuItem";
 import { Link } from "react-router-dom";
 import "../components/personalRow/PersonalMainPageStyle.css";
+import "../routes/personalMainPageStyle.css";
 
 const PersonalMainPage = () => {
   return (
     <>
       <NavbarOne />
       <NavbarTwo />
+      {/* collapsible area from animation  */}
 
-      <div className="perMenu">
+      <div className="perMenu" id="personalCollapse">
         <ul className="personalMenu">
           {PersonalMenuItem.map((item, index) => {
             return (
@@ -29,6 +31,7 @@ const PersonalMainPage = () => {
           })}
         </ul>
       </div>
+
       <div>
         <img src={personalPic} alt="" />
       </div>

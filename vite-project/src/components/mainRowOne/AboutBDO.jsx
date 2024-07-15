@@ -147,7 +147,9 @@ const AboutBDO = () => {
               </li>
             </ul>
           ) : null}
+
           {/* ---------------------All Disclosures------------------- */}
+
           <Link
             className="allDisclosures dropdown-toggle"
             onClick={() => setShow4(!show4)}
@@ -176,12 +178,12 @@ const AboutBDO = () => {
               </li>
             </ul>
           ) : null}
-          {/* --------------------Learn--------------------------*/}
+
           <Link
             className="learn dropdown-toggle"
             onClick={() => setShow5(!show5)}
           >
-            Learn
+            Learn more
           </Link>
           {show5 ? (
             <ul id="ulLearn">

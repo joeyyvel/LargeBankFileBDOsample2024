@@ -48,7 +48,6 @@ import BookAVisit from "./components/mainRowOne/branchesChildContent/BookAVisit"
 import BranchAndAtmLocator from "./components/mainRowOne/branchesChildContent/BranchAndAtmLocator";
 import BranchUpdates from "./components/mainRowOne/branchesChildContent/BranchUpdates";
 import PersonalPage from "./components/personalRow/PersonalPage";
-import BusinessPage from "./components/businessRow/BusinessPage";
 import Login from "./components/mainRowTwo/loginChildContent/Login";
 import BdoOnlineBanking from "./components/mainRowTwo/loginChildContent/BdoOnlineBanking";
 import NetworkBank from "./components/mainRowTwo/loginChildContent/NetworkBank";
@@ -73,6 +72,7 @@ import CorporateCards from "./components/businessRow/CorporateCards";
 import Investment from "./components/businessRow/Investment";
 import Apply from "./components/mainRowTwo/apply/Apply";
 import Search from "./components/mainRowTwo/apply/Search";
+import BusinessMainPage from "./routes/BusinessMainPage";
 
 export const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -133,7 +133,6 @@ export const router = createBrowserRouter([
   { path: "/branchAndAtmLocator", element: <BranchAndAtmLocator /> },
   { path: "/branchUpdates", element: <BranchUpdates /> },
   { path: "/personalPage", element: <PersonalPage /> },
-  { path: "/businessPage", element: <BusinessPage /> },
   { path: "/login", element: <Login /> },
   { path: "/bdoOnlineBanking", element: <BdoOnlineBanking /> },
   { path: "/bdoSecurities", element: <BdoSecurities /> },
@@ -163,4 +162,5 @@ export const router = createBrowserRouter([
   { path: "/investment", element: <Investment /> },
   { path: "/apply", element: <Apply /> },
   { path: "/search", element: <Search /> },
+  { path: "/businessMainPage", element: <BusinessMainPage /> },
 ]);

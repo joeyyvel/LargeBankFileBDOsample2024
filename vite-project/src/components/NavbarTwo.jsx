@@ -26,10 +26,59 @@ const NavbarTwo = () => {
         </div>
 
         {/* {---------------personal---------------} */}
+
+        {/*     
+        <div>
+          <div
+            data-bs-toggle="collapse"
+            data-bs-target="#personalCollapse"
+            aria-expanded="false"
+            aria-controls="personalCollapse"
+          >
+            collapse
+          </div>
+          <Link
+            // data-bs-toggle="collapse"
+            // data-bs-target="#personalCollapse"
+            // aria-expanded="false"
+            // aria-controls="personalCollapse"
+            to="/personalMainPage"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "white",
+              fontFamily: "Nunito",
+              position: "relative",
+              top: "8px",
+            }}
+          >
+            Personal
+          </Link>
+        </div>
+           
+        */}
+
         <div className="personal">
+          <Link
+            to="/personalMainPage"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "white",
+              fontFamily: "Nunito",
+              position: "relative",
+              top: "8px",
+            }}
+          >
+            personal
+          </Link>
+        </div>
+
+        {/* {---------------Business---------------} */}
+        <div className="business">
           <p>
             <Link
-              to="/personalMainPage"
+              to="/businessMainPage"
               style={{
                 textDecoration: "none",
                 fontSize: "18px",
@@ -39,26 +88,9 @@ const NavbarTwo = () => {
                 top: "8px",
               }}
             >
-              Personal
-            </Link>
-          </p>
-        </div>
-        {/* {---------------Business---------------} */}
-        <div className="business">
-          <h4>
-            <Link
-              style={{
-                color: "#FDB913",
-                textDecoration: "none",
-                fontSize: "18px",
-                fontFamily: "Nunito",
-                fontWeight: "700",
-              }}
-              to="/businessPage"
-            >
               Business
             </Link>
-          </h4>
+          </p>
         </div>
 
         {/* {-------------------Search****Apply****Login Area----------------} */}
@@ -142,8 +174,9 @@ const NavbarTwo = () => {
               >
                 Login
               </button>
-              <div className="dropdown-content">
+              <div className="dropdown-contents">
                 <Link
+                  style={{ backgroundColor: "white" }}
                   className="personalLink dropdown-toggle"
                   onClick={() => setShow(!show)}
                   to=""

@@ -1,12 +1,12 @@
-import { PersonalMenuItem } from "../components/personalRow/PersonalMenuItem";
+import { BusinessMenuItem } from "../components/businessRow/BusinessMenuItem";
 import { Link } from "react-router-dom";
-import "../components/personalRow/PersonalMainPageStyle.css";
-const PersonalMainAppPage = () => {
+
+const BusinessMainAppPage = () => {
   return (
     <>
-      <div className="collapse perMenu" id="collapseExample">
-        <ul className="personalMenu">
-          {PersonalMenuItem.map((item, index) => {
+      <div className="collapse busMenu" id="businessCollapse">
+        <ul className="businessMenu">
+          {BusinessMenuItem.map((item, index) => {
             return (
               <li key={index}>
                 <Link
@@ -24,5 +24,4 @@ const PersonalMainAppPage = () => {
     </>
   );
 };
-
-export default PersonalMainAppPage;
+export default BusinessMainAppPage;

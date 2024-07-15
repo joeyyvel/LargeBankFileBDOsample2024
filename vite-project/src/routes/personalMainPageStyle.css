@@ -1,0 +1,18 @@
+.personalMenu {
+  width: 80%;
+  height: 50px;
+  position: relative;
+  background-color: none;
+  animation: mymove 5s;
+  animation-fill-mode: 2s;
+}
+
+@keyframes mymove {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 20px;
+    background-color: azure;
+  }
+}

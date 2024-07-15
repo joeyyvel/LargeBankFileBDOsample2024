@@ -1,7 +1,6 @@
 .perMenu {
   margin: auto;
   background-color: white;
-
   width: 100%;
 }
 
@@ -21,6 +20,7 @@
 ul {
   list-style-type: none;
 }
+
 /*-----------------------link show's underline when on hover----------------*/
 #personLine:hover {
   color: "orange";
