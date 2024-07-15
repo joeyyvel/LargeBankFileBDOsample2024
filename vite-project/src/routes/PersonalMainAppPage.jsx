@@ -4,7 +4,7 @@ import "../components/personalRow/PersonalMainPageStyle.css";
 const PersonalMainAppPage = () => {
   return (
     <>
-      <div className="collapse perMenu" id="collapseExample">
+      <div className="perMenu" id="collapseExample">
         <ul className="personalMenu">
           {PersonalMenuItem.map((item, index) => {
             return (
