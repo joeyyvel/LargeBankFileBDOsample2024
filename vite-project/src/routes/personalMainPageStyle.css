@@ -33,19 +33,32 @@
   height: 18rem;
   border: 2px solid green;
   position: absolute;
-  top: 11.3rem;
+  top: 11.7rem;
   z-index: 2;
   display: block;
 }
 #acct-list {
-  padding: 10px;
   position: relative;
-  top: 20px;
+  top: 40px;
+  padding: 10px 8px;
+  margin-left: 75px;
 }
+#acc-list:hover {
+  display: none;
+}
+
 #acct-list-link {
   text-decoration: none;
   color: black;
   font-weight: 700;
-  padding-left: 70px;
   font-family: Nunito light;
+}
+#acct-list:hover {
+  background-color: #e5f5ff;
+}
+
+.fa-caret-right {
+  color: gray;
+  float: right;
+  font-size: 18px;
 }
