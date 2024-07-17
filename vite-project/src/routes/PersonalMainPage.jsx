@@ -31,7 +31,30 @@ const PersonalMainPage = () => {
           })}
         </ul>
       </div>
-
+      <div className="accounts">
+        <div className="accountsChild">
+          <nav>
+            <ul className="accounts-list">
+              <li id="acct-list">
+                <Link id="acct-list-link">
+                  Savings Accounts <i></i>
+                </Link>
+              </li>
+              <li id="acct-list">
+                <Link id="acct-list-link">Checking Accounts</Link>
+              </li>
+              <li id="acct-list">
+                <Link id="acct-list-link">
+                  Time Deposit <span>Accounts</span>{" "}
+                </Link>
+              </li>
+              <li id="acct-list">
+                <Link id="acct-list-link">FOREX Services</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div>
         <img src={personalPic} alt="" />
       </div>

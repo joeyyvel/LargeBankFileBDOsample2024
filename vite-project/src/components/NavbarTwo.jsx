@@ -17,6 +17,18 @@ const NavbarTwo = () => {
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
 
+  // restart animation of dropdown menu for personal component
+  const handleAnimation = () => {
+    const data = document.getElementsByClassName("personal");
+    data.classList.toggle("active");
+  };
+
+  //restart animation of dropdown menu for business component
+  const handleAnimationBusiness = () => {
+    const data1 = document.getElementsByClassName("business");
+    data1.classList.toggle("active");
+  };
+
   return (
     <>
       <div className="navRowTwo">
@@ -26,38 +38,6 @@ const NavbarTwo = () => {
         </div>
 
         {/* {---------------personal---------------} */}
-
-        {/*     
-        <div>
-          <div
-            data-bs-toggle="collapse"
-            data-bs-target="#personalCollapse"
-            aria-expanded="false"
-            aria-controls="personalCollapse"
-          >
-            collapse
-          </div>
-          <Link
-            // data-bs-toggle="collapse"
-            // data-bs-target="#personalCollapse"
-            // aria-expanded="false"
-            // aria-controls="personalCollapse"
-            to="/personalMainPage"
-            style={{
-              textDecoration: "none",
-              fontSize: "18px",
-              color: "white",
-              fontFamily: "Nunito",
-              position: "relative",
-              top: "8px",
-            }}
-          >
-            Personal
-          </Link>
-        </div>
-           
-        */}
-
         <div className="personal">
           <Link
             to="/personalMainPage"
@@ -69,6 +49,7 @@ const NavbarTwo = () => {
               position: "relative",
               top: "8px",
             }}
+            onClick={() => handleAnimation()}
           >
             personal
           </Link>
@@ -87,6 +68,7 @@ const NavbarTwo = () => {
                 position: "relative",
                 top: "8px",
               }}
+              onClick={() => handleAnimationBusiness()}
             >
               Business
             </Link>

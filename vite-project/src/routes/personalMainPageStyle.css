@@ -1,5 +1,11 @@
 /* animation for personal drop down page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.active,
 .personalMenu {
   width: 80%;
   height: 50px;
@@ -7,6 +13,7 @@
   background-color: none;
   animation: mymove 5s;
   animation-fill-mode: 2s;
+  background-color: aqua; /*to be removed later */
 }
 
 @keyframes mymove {
@@ -14,7 +21,31 @@
     top: -35px;
   }
   to {
-    top: 20px;
+    top: 10px;
     background-color: none;
   }
+}
+/*-----------------------Accounts Modal----------------------*/
+.accounts {
+  background-color: #f4f4f4;
+  opacity: 0.7;
+  width: 300px;
+  height: 18rem;
+  border: 2px solid green;
+  position: absolute;
+  top: 11.3rem;
+  z-index: 2;
+  display: block;
+}
+#acct-list {
+  padding: 10px;
+  position: relative;
+  top: 20px;
+}
+#acct-list-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding-left: 70px;
+  font-family: Nunito light;
 }

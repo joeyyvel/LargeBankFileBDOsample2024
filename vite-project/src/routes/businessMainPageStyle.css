@@ -1,0 +1,20 @@
+/*-------------Business Drop down animation----------*/
+.businessMenu,
+.active {
+  width: 80%;
+  height: 50px;
+  position: relative;
+  background-color: none;
+  animation: mymove 5s;
+  animation-fill-mode: 2s;
+}
+
+@keyframes mymove {
+  from {
+    top: -35px;
+  }
+  to {
+    top: 10px;
+    background-color: none;
+  }
+}
