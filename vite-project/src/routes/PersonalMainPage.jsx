@@ -32,46 +32,59 @@ const PersonalMainPage = () => {
         </ul>
       </div>
       {/* -----------------Accounts page section----------------- */}
-      <div className="accounts">
-        <div className="accountsChild">
-          <nav>
-            <ul className="accounts-list">
-              <li id="acct-list">
-                <Link id="acct-list-link">
-                  Savings Accounts <i className="fa-solid fa-caret-right"></i>
-                </Link>
-              </li>
-              <li id="acct-list">
-                <Link id="acct-list-link">
-                  Checking Accounts<i className="fa-solid fa-caret-right"></i>
-                </Link>
-              </li>
-              <li id="acct-list">
-                {/* -------------Time Deposit Accounts in-line block------------- */}
-                <Link
-                  id="acct-list-link"
-                  style={{
-                    display: "inline-block",
-                  }}
-                >
-                  Time Deposit <br /> Accounts{"              "}
-                  <i
-                    className="fa-solid fa-caret-right"
-                    style={{ paddingLeft: "117px" }}
-                  ></i>{" "}
-                </Link>
-              </li>
-              <li id="acct-list">
-                <Link id="acct-list-link">
-                  FOREX Services <i className="fa-solid fa-caret-right"></i>
-                </Link>
-              </li>
-            </ul>
-          </nav>
+      <div className="main-body">
+        <p>Hello main</p>
+        <div className="accounts">
+          <div className="accountsChild">
+            <nav>
+              <ul className="accounts-list">
+                <li id="acct-list">
+                  <Link id="acct-list-link">
+                    Savings Accounts <i className="fa-solid fa-caret-right"></i>
+                  </Link>
+                </li>
+                <li id="acct-list">
+                  <Link id="acct-list-link">
+                    Checking Accounts<i className="fa-solid fa-caret-right"></i>
+                  </Link>
+                </li>
+                <li id="acct-list">
+                  {/* -------------Time Deposit Accounts in-line block------------- */}
+                  <Link
+                    id="acct-list-link"
+                    style={{
+                      display: "inline-block",
+                    }}
+                  >
+                    Time Deposit <br /> Accounts{"              "}
+                    <i
+                      className="fa-solid fa-caret-right"
+                      style={{ paddingLeft: "117px" }}
+                    ></i>{" "}
+                  </Link>
+                </li>
+                <li id="acct-list">
+                  <Link id="acct-list-link">
+                    FOREX Services <i className="fa-solid fa-caret-right"></i>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div>
-        <img src={personalPic} alt="" />
+        {/* --------first picture of personal page girl trial only------- */}
+        <img
+          src={personalPic}
+          alt=""
+          style={{
+            height: "500px",
+            zIndex: "-2",
+            position: "absolute",
+            marginTop: "-20rem",
+          }}
+        />
       </div>
     </>
   );

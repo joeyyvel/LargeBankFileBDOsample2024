@@ -1,12 +1,10 @@
 import "./App.css";
-import NavbarOne from "./components/NavbarOne";
-import NavbarTwo from "./components/NavbarTwo";
+import PersonalMainPage from "./routes/PersonalMainPage";
 
 function App() {
   return (
     <>
-      <NavbarOne />
-      <NavbarTwo />
+      <PersonalMainPage />
     </>
   );
 }

@@ -29,6 +29,7 @@ ul {
   border-bottom: 4px solid orange;
   position: inherit;
   padding-bottom: 15px;
+  z-index: 3;
 }
 
 /*------------------------left modal nav------------------------------------*/
