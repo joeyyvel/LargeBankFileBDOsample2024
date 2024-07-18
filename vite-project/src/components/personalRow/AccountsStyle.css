@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
+/* main body before display flex */
+#accounts {
+  display: flex;
+}
+
+.leftPanel {
+  width: 50%;
+  background-color: orange;
+}
+
+.rightPanel {
+  width: 50%;
+  background-color: cornflowerblue;
+}

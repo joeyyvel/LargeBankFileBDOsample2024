@@ -13,7 +13,7 @@
   background-color: none;
   animation: mymove 5s;
   animation-fill-mode: 2s;
-  background-color: aqua; /*to be removed later */
+  /* background-color: aqua; to be removed later */
   justify-content: space-around;
 }
 
@@ -26,16 +26,16 @@
     background-color: none;
   }
 }
-/*-----------------------Accounts Modal----------------------*/
+/*-----------------------Accounts Modal with width 100%----------------------*/
 .main-body {
   background-color: #fdfdfd;
   width: 100%;
   height: 21rem;
-  opacity: 0.9;
+  opacity: 0.5;
   z-index: 1;
   margin-top: 6px;
 }
-/*----------------------left nav with opacity----------------*/
+/*----------------------left nav square box with opacity----------------*/
 .accounts {
   background-color: #f4f4f4;
   width: 285px;
@@ -44,6 +44,7 @@
   top: 11.7rem;
   z-index: 2;
   display: block;
+  opacity: 0.9;
 }
 #acct-list {
   position: relative;

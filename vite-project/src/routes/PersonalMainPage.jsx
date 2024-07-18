@@ -1,4 +1,3 @@
-import personalPic from "../components/images/welcomeToBDOpersonal.png";
 import NavbarOne from "../components/NavbarOne";
 import NavbarTwo from "../components/NavbarTwo";
 import { PersonalMenuItem } from "../components/personalRow/PersonalMenuItem";
@@ -33,7 +32,6 @@ const PersonalMainPage = () => {
       </div>
       {/* -----------------Accounts page section----------------- */}
       <div className="main-body">
-        <p>Hello main</p>
         <div className="accounts">
           <div className="accountsChild">
             <nav>
@@ -75,16 +73,6 @@ const PersonalMainPage = () => {
       </div>
       <div>
         {/* --------first picture of personal page girl trial only------- */}
-        <img
-          src={personalPic}
-          alt=""
-          style={{
-            height: "500px",
-            zIndex: "-2",
-            position: "absolute",
-            marginTop: "-20rem",
-          }}
-        />
       </div>
     </>
   );
