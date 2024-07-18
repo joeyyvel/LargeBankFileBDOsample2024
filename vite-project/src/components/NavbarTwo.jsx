@@ -51,7 +51,7 @@ const NavbarTwo = () => {
             }}
             onClick={() => handleAnimation()}
           >
-            personal
+            Personal
           </Link>
         </div>
 
@@ -66,7 +66,7 @@ const NavbarTwo = () => {
                 color: "white",
                 fontFamily: "Nunito",
                 position: "relative",
-                top: "8px",
+                top: "5px",
               }}
               onClick={() => handleAnimationBusiness()}
             >

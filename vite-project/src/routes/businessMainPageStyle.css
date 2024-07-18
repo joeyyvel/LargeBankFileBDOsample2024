@@ -5,7 +5,7 @@
   height: 50px;
   position: relative;
   background-color: none;
-  animation: mymove 5s;
+  animation: mymove 2s;
   animation-fill-mode: 2s;
 }
 
