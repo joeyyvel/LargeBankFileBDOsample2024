@@ -36,7 +36,9 @@ const PersonalMainPage = () => {
                     color: "#004EA8",
                     backgroundColor: "pink",
                   }}
+                  /*------- yellow underline on hover title------*/
                   id="personLine"
+                  //  hover on mouse inside map taking effect on all drop menu
                   onMouseEnter={mouseEnterHandler}
                   onMouseLeave={mouseLeaveHandler}
                 >

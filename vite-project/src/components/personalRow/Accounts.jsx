@@ -29,6 +29,7 @@ const Accounts = () => {
               ></i>
               <span style={{ fontWeight: "bolder", fontSize: "18px" }}>
                 {" "}
+                {/* -----------Accounts title--------- */}
                 Accounts
               </span>{" "}
             </p>

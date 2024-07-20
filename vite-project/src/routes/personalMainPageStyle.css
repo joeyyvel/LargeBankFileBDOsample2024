@@ -16,7 +16,7 @@
   /* background-color: aqua; to be removed later   */
   justify-content: space-around;
 }
-
+/* animating the drop down by using keyframes */
 @keyframes mymove {
   from {
     top: -35px;

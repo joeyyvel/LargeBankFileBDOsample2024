@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* taking all pages to use nunito fonts */
   font-family: Nunito;
 }
 
