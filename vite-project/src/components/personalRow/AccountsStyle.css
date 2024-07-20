@@ -11,6 +11,11 @@
   margin-top: -20.9rem;
 }
 
+#personalLink {
+  background-color: red;
+  cursor: pointer;
+}
+
 .leftPanel {
   width: 50%;
   background-color: #f6f6f6;

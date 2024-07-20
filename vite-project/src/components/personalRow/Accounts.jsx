@@ -8,27 +8,33 @@ const Accounts = () => {
       <PersonalMainPage />
       <body id="accounts">
         <div className="leftPanel">
-          <p className="personalAccount">
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "black",
-                fontWeight: "500",
-                fontSize: "17px",
-              }}
-            >
-              Personal
-            </Link>
-            <i
-              className="fa-solid fa-greater-than"
-              style={{ color: "orange", fontSize: "12px", padding: "0 15px" }}
-            ></i>
-            <span style={{ fontWeight: "bolder", fontSize: "18px" }}>
-              {" "}
-              Accounts
-            </span>{" "}
-          </p>
+          <div className="personal-mainAcct">
+            <p className="personalAccount">
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontWeight: "500",
+                  fontSize: "17px",
+                }}
+                id="personalLink"
+                //<------- Personal link button------------------->
+              >
+                Personal
+              </Link>
+              {/* -------Greater than sign color orange in between Personal and Accounts-------- */}
+              <i
+                className="fa-solid fa-greater-than"
+                style={{ color: "orange", fontSize: "12px", padding: "0 15px" }}
+              ></i>
+              <span style={{ fontWeight: "bolder", fontSize: "18px" }}>
+                {" "}
+                Accounts
+              </span>{" "}
+            </p>
+          </div>
 
+          {/* ----------------------left nav page content from accounts-------------- */}
           <h1 id="discover">
             Discover the best <br />
             BDO account for <br />

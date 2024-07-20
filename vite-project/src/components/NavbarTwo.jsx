@@ -15,7 +15,7 @@ const NavbarTwo = () => {
   };
 
   const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
+  const [show1, setShow1] = useState(false); 
 
   // restart animation of dropdown menu for personal component
   const handleAnimation = () => {

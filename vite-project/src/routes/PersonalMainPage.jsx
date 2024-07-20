@@ -4,14 +4,25 @@ import { PersonalMenuItem } from "../components/personalRow/PersonalMenuItem";
 import { Link } from "react-router-dom";
 import "../components/personalRow/PersonalMainPageStyle.css";
 import "../routes/personalMainPageStyle.css";
+import { useState } from "react";
 
 const PersonalMainPage = () => {
+  const [showText, setShowText] = useState(false);
+
+  const mouseEnterHandler = () => {
+    setShowText(true);
+  };
+
+  const mouseLeaveHandler = () => {
+    setShowText(false);
+  };
+
   return (
     <>
       <NavbarOne />
       <NavbarTwo />
-      {/* collapsible area from animation  */}
 
+      {/* collapsible area from animation  */}
       <div className="perMenu" id="personalCollapse">
         <ul className="personalMenu">
           {PersonalMenuItem.map((item, index) => {
@@ -20,8 +31,14 @@ const PersonalMainPage = () => {
                 <Link
                   className={item.cName}
                   to={item.url}
-                  style={{ textDecoration: "none", color: "#004EA8" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "#004EA8",
+                    backgroundColor: "pink",
+                  }}
                   id="personLine"
+                  onMouseEnter={mouseEnterHandler}
+                  onMouseLeave={mouseLeaveHandler}
                 >
                   {item.title}
                 </Link>
@@ -30,44 +47,48 @@ const PersonalMainPage = () => {
           })}
         </ul>
       </div>
-      {/* -----------------Accounts page section----------------- */}
+      {/* ----------------------------Accounts page section------------------------------------- */}
       <div className="main-body">
         <div className="accounts">
           <div className="accountsChild">
-            <nav>
-              <ul className="accounts-list">
-                <li id="acct-list">
-                  <Link id="acct-list-link">
-                    Savings Accounts <i className="fa-solid fa-caret-right"></i>
-                  </Link>
-                </li>
-                <li id="acct-list">
-                  <Link id="acct-list-link">
-                    Checking Accounts<i className="fa-solid fa-caret-right"></i>
-                  </Link>
-                </li>
-                <li id="acct-list">
-                  {/* -------------Time Deposit Accounts in-line block------------- */}
-                  <Link
-                    id="acct-list-link"
-                    style={{
-                      display: "inline-block",
-                    }}
-                  >
-                    Time Deposit <br /> Accounts{"              "}
-                    <i
-                      className="fa-solid fa-caret-right"
-                      style={{ paddingLeft: "117px" }}
-                    ></i>{" "}
-                  </Link>
-                </li>
-                <li id="acct-list">
-                  <Link id="acct-list-link">
-                    FOREX Services <i className="fa-solid fa-caret-right"></i>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+            {showText && (
+              <nav className="accounts-nav">
+                <ul className="accounts-list">
+                  <li id="acct-list">
+                    <Link id="acct-list-link">
+                      Savings Accounts{" "}
+                      <i className="fa-solid fa-caret-right"></i>
+                    </Link>
+                  </li>
+                  <li id="acct-list">
+                    <Link id="acct-list-link">
+                      Checking Accounts
+                      <i className="fa-solid fa-caret-right"></i>
+                    </Link>
+                  </li>
+                  <li id="acct-list">
+                    {/* --------------------------Time Deposit Accounts in-line block-------------------------- */}
+                    <Link
+                      id="acct-list-link"
+                      style={{
+                        display: "inline-block",
+                      }}
+                    >
+                      Time Deposit <br /> Accounts{"              "}
+                      <i
+                        className="fa-solid fa-caret-right"
+                        style={{ paddingLeft: "117px" }}
+                      ></i>{" "}
+                    </Link>
+                  </li>
+                  <li id="acct-list">
+                    <Link id="acct-list-link">
+                      FOREX Services <i className="fa-solid fa-caret-right"></i>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            )}
           </div>
         </div>
       </div>
