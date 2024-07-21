@@ -18,7 +18,7 @@ const Accounts = () => {
                   fontSize: "17px",
                 }}
                 id="personalLink"
-                //<------- Personal link button------------------->
+                //<------- Personal link button directed to accounts page------------------->
               >
                 Personal
               </Link>

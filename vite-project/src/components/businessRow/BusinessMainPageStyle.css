@@ -1,6 +1,9 @@
 .busMenu {
   margin: auto;
   background-color: white;
+  position: fixed;
+  top: 8rem;
+  width: 100%;
 }
 
 .businessMenu {

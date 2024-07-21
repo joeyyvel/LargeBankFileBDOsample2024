@@ -8,6 +8,10 @@
   height: 81px;
   background-color: #004ea8;
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-top: 50px;
 }
 /*----------------Center logo and div---------------*/
 .bdoLogo {

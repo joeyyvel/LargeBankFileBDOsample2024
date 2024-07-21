@@ -22,7 +22,7 @@ const PersonalMainPage = () => {
       <NavbarOne />
       <NavbarTwo />
 
-      {/* collapsible area from animation  */}
+      {/* collapsible area  using @keyframe from animation  */}
       <div className="perMenu" id="personalCollapse">
         <ul className="personalMenu">
           {PersonalMenuItem.map((item, index) => {
@@ -53,8 +53,7 @@ const PersonalMainPage = () => {
       <div className="main-body">
         <div className="accounts">
           <div className="accountsChild">
-            {/*------------------------------------------------------------------  
-            {/* ---show and hide left nav by mouseEnter and mouseLeave--- 
+            {/* ---show and hide left nav by mouseEnter and mouseLeave---*/}
             {showText && (
               <nav className="accounts-nav">
                 <ul className="accounts-list">
@@ -71,7 +70,7 @@ const PersonalMainPage = () => {
                     </Link>
                   </li>
                   <li id="acct-list">
-                    {/* --------------------------Time Deposit Accounts in-line block-------------------------- 
+                    {/* --------------------------Time Deposit Accounts in-line block--------------------------*/}
                     <Link
                       id="acct-list-link"
                       style={{
@@ -90,11 +89,10 @@ const PersonalMainPage = () => {
                       FOREX Services <i className="fa-solid fa-caret-right"></i>
                     </Link>
                   </li>
-              </ul>
+                </ul>
               </nav>
             )}
 
----------------------------------------------------------------------------*/}
             {/* newly installed for experiment hover area *
             {/* ---show and hide left nav by mouseEnter and mouseLeave--- *
             {showText && (
@@ -343,9 +341,9 @@ const PersonalMainPage = () => {
                 </ul>
               </nav>
             )}
-----------------------------------------------------------------------------*/}
-            {/* newly installed for experiment hover area */}
-            {/* ---show and hide left nav by mouseEnter and mouseLeave--- */}
+
+            {/* newly installed for experiment hover area 
+            {/* ---show and hide left nav by mouseEnter and mouseLeave--- 
             {showText && (
               <nav className="accounts-nav">
                 <ul className="accounts-list">
@@ -361,7 +359,7 @@ const PersonalMainPage = () => {
                     </Link>
                   </li>
                   <li id="acct-list">
-                    {/* --------------------------Time Deposit Accounts in-line block-------------------------- */}
+                    {/* --------------------------Time Deposit Accounts in-line block-------------------------- 
                     <Link
                       id="acct-list-link"
                       style={{
@@ -383,6 +381,7 @@ const PersonalMainPage = () => {
                 </ul>
               </nav>
             )}
+               */}
           </div>
         </div>
       </div>
