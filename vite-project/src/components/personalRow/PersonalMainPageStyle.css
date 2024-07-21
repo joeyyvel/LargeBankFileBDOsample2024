@@ -34,12 +34,12 @@ ul {
 
 /*--------Accounts Modal with width 100% left modal div area----------------------*/
 .main-body {
-  background-color: violet;
+  background-color: maroon;
   width: 100%;
   height: 22rem;
   opacity: 0.5;
   z-index: 1;
-  margin-top: 6px;
+  margin-top: 5px;
   display: block;
 }
 
@@ -47,10 +47,10 @@ ul {
 .accounts {
   background-color: #f6f6f6;
   width: 285px;
-  height: 22rem;
+  height: 8rem;
   position: absolute;
-  top: 11.7rem;
-  z-index: 2;
+  top: 11.6rem;
+  z-index: -2;
 }
 
 /*----------------------main-body and accounts on hover toggle--------------*/
